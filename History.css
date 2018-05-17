@@ -1,0 +1,21 @@
+body{
+	background-color: #CDCDCD;
+}
+
+.item .carousel-caption{
+ color:#000066;	
+}
+
+h1{
+	color: #d9ff66;
+}
+
+h2{
+	color: #0033CC;
+}
+
+p{
+	color: #e60000;
+	font-weight: bolder;
+	text-align: justify;
+}
