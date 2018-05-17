@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ranger's Newsletter</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" 
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="newsletter.css">
+  </head>
+  <body>
+  <header>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="z-hall-of-fame.jpg" alt="Logo"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+	  <li class="active"><a href="newsletter.html">Newsletter</a></li>
+	  <li><a href="register.html">Register</a></li>
+	  <li><a href="about.html">About This Portfolio</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+    </ul>
+  </div>
+</nav>
+</header>
+<div class="container">
+  <div class="jumbotron extend">
+	<img src="z-newsletter-header.jpg" alt="newsletter">
+  <!--</div>
+    <h1>Bootstrap Tutorial</h1> 
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.</p> 
+  </div>
+  <p>This is some text.</p> 
+  <p>This is another text.</p> 
+</div>-->
+  <div class="col-md-9 main">
+  <h2 class="main"><center>Ranger's Commitment to Winning</center></h2> 
+    <p>A day after its fourth straight loss, the team posted a message from president Glen Sather and general manager Jeff Gorton to fans on its website and Twitter on Thursday, hinting strongly that big-name veterans will be shipped off for prospects and draft picks as the deadline approaches.</p> <div class="inside"><img src="z-gorton.jpg" alt="Gorton"></div> 
+	<p>The second half of the third paragraph reads, "As we approach the trade deadline later this month and into the summer, we will be focused on adding young, competitive players that combine speed, skill and character. This may mean we lose some familiar faces, guys we all care about and respect. While this is part of the game, it's never easy. Our promise to you is that our plans will be guided by our singular commitment: ensuring we are building the foundation for our next Stanley Cup contender. Among those who could potentially be dealt are leading goal scorer Michael Grabner and 15th-year veteran Rick Nash</p> 
+
+	<p>So how much of the Rangers’ struggles throughout the season were directly a result of Alain Vigneault’s decision making? The best way to determine that is by looking at New York’s performance throughout the season, pinpointing what they struggled at that lead to their downfall, and determining whether those issues were player or coach driven.</p>
+  </div>
+  
+  
+  <div class="col-md-3 side">
+  <h2><center>Featured Players</center></h2> 
+    <p>Click below to find out more information on our featured Rangers.</p>
+	   <img class="myImg" src="z-lundqvist-thumb.jpg" alt="<h3>Henrik Lundqvist, born 2 March 1982, is a Swedish professional ice hockey goaltender for the New York Rangers of the National Hockey League (NHL). Before winning the Vezina Trophy in 2012, he was nominated in each of his first three seasons, and is the only goaltender in NHL history to record 30 wins in each of his first seven seasons.</h3>">
+	   <br>
+	   <br>
+	    <img class="myImg" src="z-zuccarello-thumb.jpg" alt="<h3>Mats Zuccarello is a Norwegian professional ice hockey winger and an alternate captain for the New York Rangers of the National Hockey League (NHL). Prior to joining the NHL, he played for Modo Hockey in the Swedish Elite League. In 2010, he won the Guldhjälmen (Golden Helmet), awarded annually to the most valuable player in the Swedish Hockey League.</h3>">
+	   <br>
+	   <br>
+	   <img src="z-subscribe.jpg" alt="Subscribe">
+	   
+	   
+  </div>
+  
+</div>
+</div>
+<div class="container">
+  <div class="jumbotron extend">
+	<img src="z-newsletter-bottom.jpg" alt="footer newsletter">
+</div>
+</div>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
+
+
+
+
